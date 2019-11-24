@@ -17,6 +17,7 @@ const App: React.FC = () => {
   return (
     <div>
       <h1>WatchAlone</h1>
+      {!url ? <p>Please enter URL</p>: <p>URL:</p>}
       <a href={url}>{url}</a>
       <form onSubmit={handleSubmit}>
         <input type="text" value={url} onChange={event => setUrl(event.target.value)} placeholder="Youtube url here" />
