@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <h1>WatchAlone</h1>
       <a href={url}>{url}</a>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={url} onChange={event => setUrl(event.target.value)} />
+        <input type="text" value={url} onChange={event => setUrl(event.target.value)} placeholder="Youtube url here" />
         <input type="submit" value="Search"></input>
       </form>
       <iframe title="ytFrame" src={`https://www.youtube.com/embed/${videoID}`}></iframe>
